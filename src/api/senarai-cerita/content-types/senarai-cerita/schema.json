@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "senarai_ceritas",
+  "info": {
+    "singularName": "senarai-cerita",
+    "pluralName": "senarai-ceritas",
+    "displayName": "Senarai Cerita"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "senarai_cerita_section": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::senarai-cerita-section.senarai-cerita-section"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "summary": {
+      "type": "text",
+      "required": true
+    },
+    "content": {
+      "type": "blocks",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

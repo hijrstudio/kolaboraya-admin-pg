@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "senarai_cerita_sections",
+  "info": {
+    "singularName": "senarai-cerita-section",
+    "pluralName": "senarai-cerita-sections",
+    "displayName": "Senarai Cerita Section"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "summary": {
+      "type": "text",
+      "required": true
+    },
+    "order": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

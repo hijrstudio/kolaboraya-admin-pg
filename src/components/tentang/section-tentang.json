@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_tentang_section_tentangs",
+  "info": {
+    "displayName": "Section Tentang",
+    "icon": "bell"
+  },
+  "options": {},
+  "attributes": {
+    "bgColor": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "titleColor": {
+      "type": "string",
+      "required": true
+    },
+    "summary": {
+      "type": "text",
+      "required": true
+    },
+    "summaryColor": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

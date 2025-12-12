@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_home_section_on_texts",
+  "info": {
+    "displayName": "Section On Text",
+    "icon": "fileXls"
+  },
+  "options": {},
+  "attributes": {
+    "taglineAgenda": {
+      "type": "string",
+      "required": true
+    },
+    "summaryAgenda": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "config": {}
+}

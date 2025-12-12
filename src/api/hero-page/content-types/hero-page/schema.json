@@ -1,0 +1,32 @@
+{
+  "kind": "singleType",
+  "collectionName": "hero_pages",
+  "info": {
+    "singularName": "hero-page",
+    "pluralName": "hero-pages",
+    "displayName": "Hero Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "backgroundHero": {
+      "type": "component",
+      "component": "home.background-hero",
+      "repeatable": false
+    },
+    "titleHome": {
+      "type": "string",
+      "required": true
+    },
+    "titleAbout": {
+      "type": "string",
+      "required": true
+    },
+    "summaryAbout": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

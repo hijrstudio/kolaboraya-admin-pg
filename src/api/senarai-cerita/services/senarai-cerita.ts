@@ -1,0 +1,7 @@
+/**
+ * senarai-cerita service
+ */
+
+import { factories } from '@strapi/strapi';
+
+export default factories.createCoreService('api::senarai-cerita.senarai-cerita');

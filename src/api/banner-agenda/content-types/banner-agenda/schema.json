@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "banner_agendas",
+  "info": {
+    "singularName": "banner-agenda",
+    "pluralName": "banner-agendas",
+    "displayName": "Banner Agenda"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "banner": {
+      "type": "component",
+      "component": "banner.banner-info",
+      "repeatable": false
+    }
+  }
+}

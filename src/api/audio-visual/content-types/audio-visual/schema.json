@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "audio_visuals",
+  "info": {
+    "singularName": "audio-visual",
+    "pluralName": "audio-visuals",
+    "displayName": "Audio Visual"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "summary": {
+      "type": "string",
+      "required": true
+    },
+    "audio_visual_section": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::audio-visual-section.audio-visual-section"
+    },
+    "audio_visual_category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::audio-visual-category.audio-visual-category"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "link": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

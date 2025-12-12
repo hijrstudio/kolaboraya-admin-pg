@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "tentang_pages",
+  "info": {
+    "singularName": "tentang-page",
+    "pluralName": "tentang-pages",
+    "displayName": "Tentang Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sections": {
+      "type": "dynamiczone",
+      "components": [
+        "tentang.section-tentang"
+      ]
+    }
+  }
+}

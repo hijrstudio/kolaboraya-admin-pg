@@ -1,0 +1,51 @@
+{
+  "collectionName": "components_home_section_kolaborasis",
+  "info": {
+    "displayName": "Section Kolaborasi",
+    "icon": "command"
+  },
+  "options": {},
+  "attributes": {
+    "photo_1": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "photo_2": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "photo_3": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "summary": {
+      "type": "text",
+      "required": true
+    },
+    "summaryCircle": {
+      "type": "text",
+      "required": true
+    }
+  },
+  "config": {}
+}

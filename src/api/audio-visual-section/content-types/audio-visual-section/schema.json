@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "audio_visual_sections",
+  "info": {
+    "singularName": "audio-visual-section",
+    "pluralName": "audio-visual-sections",
+    "displayName": "Audio Visual Section"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "summary": {
+      "type": "text",
+      "required": true
+    },
+    "order": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_home_section_senarais",
+  "info": {
+    "displayName": "Section Senarai",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "summarySenarai": {
+      "type": "text",
+      "required": true
+    },
+    "imageCard_1": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "imageCard_2": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

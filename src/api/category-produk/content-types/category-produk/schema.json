@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "category_produks",
+  "info": {
+    "singularName": "category-produk",
+    "pluralName": "category-produks",
+    "displayName": "Category Produk"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Category": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Category",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}
