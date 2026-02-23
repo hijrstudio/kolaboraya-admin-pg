@@ -1,23 +1,28 @@
 export default [
   "strapi::logger",
   "strapi::errors",
-  "strapi::security",
-  "strapi::cors",
-  "strapi::poweredBy",
-  "strapi::query",
-
   {
-    name: "strapi::body",
+    name: "strapi::security",
     config: {
-      formLimit: "256mb",
-      jsonLimit: "256mb",
-      textLimit: "256mb",
-      formidable: {
-        maxFileSize: 250 * 1024 * 1024, // 250MB
+      contentSecurityPolicy: {
+        useDefaults: true,
+        directives: {
+          "img-src": [
+            "'self'",
+            "data:",
+            "blob:",
+            "https://market-assets.strapi.io",
+            "https://sgp1.digitaloceanspaces.com",
+            "https://kolaboraya-media.sgp1.digitaloceanspaces.com",
+          ],
+        },
       },
     },
   },
-
+  "strapi::cors",
+  "strapi::poweredBy",
+  "strapi::query",
+  "strapi::body",
   "strapi::session",
   "strapi::favicon",
   "strapi::public",
