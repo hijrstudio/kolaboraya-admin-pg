@@ -1,0 +1,18 @@
+warning: in the working copy of 'package.json', LF will be replaced by CRLF the next time Git touches it
+[1mdiff --git a/package.json b/package.json[m
+[1mindex 7e0b9d1..a36acf0 100644[m
+[1m--- a/package.json[m
+[1m+++ b/package.json[m
+[36m@@ -15,10 +15,12 @@[m
+     "upgrade:dry": "npx @strapi/upgrade latest --dry"[m
+   },[m
+   "dependencies": {[m
+[32m+[m[32m    "@aws-sdk/client-s3": "^3.975.0",[m
+     "@strapi/plugin-cloud": "5.32.0",[m
+     "@strapi/plugin-users-permissions": "5.32.0",[m
+     "@strapi/provider-upload-aws-s3": "^5.36.1",[m
+     "@strapi/strapi": "5.32.0",[m
+[32m+[m[32m    "node-fetch": "^2.7.0",[m
+     "pg": "8.8.0",[m
+     "react": "^18.0.0",[m
+     "react-dom": "^18.0.0",[m
