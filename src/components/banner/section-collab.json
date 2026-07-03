@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_banner_section_collabs",
+  "info": {
+    "displayName": "SectionCollab"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "summary": {
+      "type": "text",
+      "required": true
+    },
+    "bgColor": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "link_ketentuan": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

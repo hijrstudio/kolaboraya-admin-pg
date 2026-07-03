@@ -16,6 +16,20 @@ export interface BannerBannerInfo extends Struct.ComponentSchema {
   };
 }
 
+export interface BannerSectionCollab extends Struct.ComponentSchema {
+  collectionName: 'components_banner_section_collabs';
+  info: {
+    displayName: 'SectionCollab';
+  };
+  attributes: {
+    bgColor: Schema.Attribute.String & Schema.Attribute.Required;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    link_ketentuan: Schema.Attribute.String;
+    summary: Schema.Attribute.Text & Schema.Attribute.Required;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 export interface HomeBackgroundHero extends Struct.ComponentSchema {
   collectionName: 'components_home_background_heroes';
   info: {
@@ -117,6 +131,7 @@ declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'banner.banner-info': BannerBannerInfo;
+      'banner.section-collab': BannerSectionCollab;
       'home.background-hero': HomeBackgroundHero;
       'home.section-kolaborasi': HomeSectionKolaborasi;
       'home.section-kolaborator': HomeSectionKolaborator;

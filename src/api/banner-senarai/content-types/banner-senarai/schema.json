@@ -15,6 +15,11 @@
       "type": "component",
       "component": "banner.banner-info",
       "repeatable": false
+    },
+    "SectionCollab": {
+      "type": "component",
+      "component": "banner.section-collab",
+      "repeatable": false
     }
   }
 }
