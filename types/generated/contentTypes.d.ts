@@ -722,6 +722,39 @@ export interface ApiCategoryProdukCategoryProduk
   };
 }
 
+export interface ApiHeroBannerHeroBanner extends Struct.CollectionTypeSchema {
+  collectionName: 'hero_banners';
+  info: {
+    displayName: 'Hero Banner';
+    pluralName: 'hero-banners';
+    singularName: 'hero-banner';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    buttonHref: Schema.Attribute.String;
+    buttonText: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::hero-banner.hero-banner'
+    > &
+      Schema.Attribute.Private;
+    order: Schema.Attribute.Integer;
+    publishedAt: Schema.Attribute.DateTime;
+    summary: Schema.Attribute.Text;
+    title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiHeroPageHeroPage extends Struct.SingleTypeSchema {
   collectionName: 'hero_pages';
   info: {
@@ -1442,6 +1475,7 @@ declare module '@strapi/strapi' {
       'api::banner-senarai.banner-senarai': ApiBannerSenaraiBannerSenarai;
       'api::category-agenda.category-agenda': ApiCategoryAgendaCategoryAgenda;
       'api::category-produk.category-produk': ApiCategoryProdukCategoryProduk;
+      'api::hero-banner.hero-banner': ApiHeroBannerHeroBanner;
       'api::hero-page.hero-page': ApiHeroPageHeroPage;
       'api::home-page.home-page': ApiHomePageHomePage;
       'api::produk-modul.produk-modul': ApiProdukModulProdukModul;
