@@ -23,8 +23,9 @@ export interface BannerSectionCollab extends Struct.ComponentSchema {
   };
   attributes: {
     bgColor: Schema.Attribute.String & Schema.Attribute.Required;
+    file_ketentuan: Schema.Attribute.Media<'files'>;
     image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-    link_ketentuan: Schema.Attribute.String;
+    link_submission: Schema.Attribute.String;
     summary: Schema.Attribute.Text & Schema.Attribute.Required;
     title: Schema.Attribute.String & Schema.Attribute.Required;
   };

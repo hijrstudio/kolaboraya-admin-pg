@@ -27,8 +27,15 @@
         "audios"
       ]
     },
-    "link_ketentuan": {
+    "link_submission": {
       "type": "string"
+    },
+    "file_ketentuan": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "files"
+      ]
     }
   },
   "config": {}
