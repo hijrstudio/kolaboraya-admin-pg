@@ -16,6 +16,47 @@
       "relation": "oneToOne",
       "target": "api::senarai-cerita-section.senarai-cerita-section"
     },
+    "KategoryKarya": {
+      "type": "enumeration",
+      "enum": [
+        "artikel",
+        "audio",
+        "ilustrasi"
+      ]
+    },
+    "audio": {
+      "type": "media",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "KategoryKarya"
+            },
+            "audio"
+          ]
+        }
+      },
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "author_karya": {
+      "type": "string",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "KategoryKarya"
+            },
+            "ilustrasi"
+          ]
+        }
+      }
+    },
     "title": {
       "type": "string",
       "required": true

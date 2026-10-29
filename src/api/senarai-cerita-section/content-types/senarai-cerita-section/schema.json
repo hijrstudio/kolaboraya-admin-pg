@@ -27,6 +27,10 @@
     "order": {
       "type": "integer",
       "required": true
+    },
+    "bgColor": {
+      "type": "string",
+      "required": false
     }
   }
 }
